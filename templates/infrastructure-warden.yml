@@ -30,8 +30,8 @@ networks:
 - name: metabase1
   type: manual
   subnets:
-  - range: 10.244.93.0/24
+  - range: 10.244.136.0/24
     name: metabase1
-    gateway: 10.244.93.1
+    gateway: 10.244.136.1
     static:
-      - 10.244.93.2 - 10.244.93.60
+      - 10.244.136.2 - 10.244.136.60
