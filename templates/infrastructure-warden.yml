@@ -1,0 +1,37 @@
+---
+meta:
+  environment: metabase-warden
+
+  stemcell:
+    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
+    version: latest
+
+update:
+  canaries: 1
+  max_in_flight: 50
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000
+
+jobs:
+  - name: just_install_packages
+    networks:
+      - name: metabase1
+
+compilation:
+  cloud_properties:
+    name: random
+
+resource_pools:
+  - name: small_z1
+    cloud_properties:
+      name: random
+
+networks:
+- name: metabase1
+  type: manual
+  subnets:
+  - range: 10.244.93.0/24
+    name: metabase1
+    gateway: 10.244.93.1
+    static:
+      - 10.244.93.2 - 10.244.93.60
