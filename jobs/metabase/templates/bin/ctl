@@ -17,8 +17,12 @@ case $1 in
     # store pid in $PIDFILE
     echo $$ > $PIDFILE
 
-    exec chpst -u vcap:vcap metabase \
-         >>$LOG_DIR/$JOB_NAME.log 2>&1
+	exec chpst -u vcap:vcap  $JAVA_HOME/bin/java  \
+               -server -XX:+UseG1GC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=25 -Xms128M -Xmx512M  \
+               -Djava.security.egd=file:/dev/./urandom \
+               -jar /var/vcap/packages/metabase/metabase.jar  \
+                >>$LOG_DIR/$JOB_NAME.log 2>&1
+
 
     ;;
 

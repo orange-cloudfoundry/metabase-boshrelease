@@ -1,6 +1,10 @@
 ---
 name: metabase
-packages: []
+packages:
+- java-common
+- openjdk
+- metabase
+
 templates:
   bin/ctl: bin/ctl
   bin/monit_debugger: bin/monit_debugger
