@@ -1,5 +1,11 @@
 # BOSH Release for metabase
 
+## Purpose
+The purpose of this bosh release is to offer a bosh deployment for the Metabase product http://www.metabase.com/
+Exposes the Metabase server on its default port.
+If using with a bosh deployment, expose the Metabase port with route-registrar release.
+
+
 ## Usage
 
 To use this bosh release, first upload it to your bosh:
