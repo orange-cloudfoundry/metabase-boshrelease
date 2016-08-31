@@ -1,0 +1,5 @@
+check process metabase
+  with pidfile /var/vcap/sys/run/metabase/metabase.pid
+  start program "/var/vcap/jobs/metabase/bin/monit_debugger metabase_ctl '/var/vcap/jobs/metabase/bin/ctl start'"
+  stop program "/var/vcap/jobs/metabase/bin/monit_debugger metabase_ctl '/var/vcap/jobs/metabase/bin/ctl stop'"
+  group vcap

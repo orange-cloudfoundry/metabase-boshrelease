@@ -1,0 +1,5 @@
+---
+name: metabase
+dependencies: []
+files:
+- metabase/0.19.3/metabase.jar
