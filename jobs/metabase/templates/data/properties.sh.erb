@@ -8,4 +8,12 @@ export NAME='<%= name %>'
 export JOB_INDEX=<%= index %>
 # full job name, like redis/0 or webapp/3
 export JOB_FULL="$NAME/$JOB_INDEX"
+
 export JAVA_HOME=/var/vcap/packages/openjdk
+# Metabase Web Container
+#export MB_JETTY_HOST=$HOSTNAME
+
+
+#export MB_DB_CONNECTION_URI="jdbc:h2:/var/vcap/store/metabase"
+export MB_DB_FILE="/var/vcap/store/metabase/metabase.db"
+
