@@ -7,3 +7,7 @@ metabase/0.19.3/metabase.jar:
   object_id: ab058ae8-9b21-4daa-8a65-6d4bbb6f98e0
   sha: b322a322fc9beba57ac1d3425a9870614f86c290
   size: 84641975
+metabase/0.23.0/metabase.jar:
+  object_id: 2a903c5d-dca4-4e21-a8b8-1f4976a53ea5
+  sha: 970783167447409d6e73e2a7ca197a29e951570f
+  size: 88586691
