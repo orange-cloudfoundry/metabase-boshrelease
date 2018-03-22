@@ -1,0 +1,29 @@
+name: metabase
+version: "2"
+commit_hash: f606cdb
+uncommitted_changes: false
+jobs:
+- name: metabase
+  version: e7798b0f38b640edb9dbbbafb86813173caf43bf
+  fingerprint: e7798b0f38b640edb9dbbbafb86813173caf43bf
+  sha1: 5ceb2a298f602a1824fcb5915276ee110cad8463
+packages:
+- name: java-common
+  version: 018744938b5a691527c626963211f4ba4b5772bf
+  fingerprint: 018744938b5a691527c626963211f4ba4b5772bf
+  sha1: 51b411242e8fed683522cd03eb7da3e191c95b49
+  dependencies: []
+- name: metabase
+  version: 78bc4d78165a18fad7e470f041c82173fa73219a
+  fingerprint: 78bc4d78165a18fad7e470f041c82173fa73219a
+  sha1: 76cd0479b6675ec313b3f4e5da0217e1d51eb837
+  dependencies: []
+- name: openjdk
+  version: b84bb8d74ba7cee825c71218ed4ccfd9f5ed7c9f
+  fingerprint: b84bb8d74ba7cee825c71218ed4ccfd9f5ed7c9f
+  sha1: 178972d1ddb59b3eace464463829e1cc09c23fa7
+  dependencies: []
+license:
+  version: 5e71d0afb018164a8ba51ba393a905c5b7421735
+  fingerprint: 5e71d0afb018164a8ba51ba393a905c5b7421735
+  sha1: f376732c33dc06a48f92cd8aa081df00ab9663a5

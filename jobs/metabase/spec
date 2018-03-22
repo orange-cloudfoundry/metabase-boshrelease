@@ -4,6 +4,9 @@ packages:
 - java-common
 - openjdk
 - metabase
+consumes: 
+- name: postgres
+  type: database
 
 templates:
   bin/ctl: bin/ctl
@@ -11,5 +14,7 @@ templates:
   data/properties.sh.erb: data/properties.sh
   helpers/ctl_setup.sh: helpers/ctl_setup.sh
   helpers/ctl_utils.sh: helpers/ctl_utils.sh
-properties: {}
-
+  config/setenv.sh.erb: config/setenv.sh
+properties: 
+  options:
+    default: ""
