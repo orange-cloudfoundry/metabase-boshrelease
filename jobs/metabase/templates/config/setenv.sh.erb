@@ -1,0 +1,9 @@
+export MB_DB_TYPE=postgres
+export MB_OPTIONS=<%= p('options') %>
+
+
+export MB_DB_HOST=<%= link("postgres").instances.first.address %>
+export MB_DB_DBNAME=<%= link('postgres').p('databases.databases')[0]["name"] %>
+export MB_DB_USER=<%= link('postgres').p('databases.roles')[0]["name"] %>
+export MB_DB_PASS=<%= link('postgres').p('databases.roles')[0]["password"] %>
+export MB_DB_PORT=<%= link('postgres').p('databases.port') %>

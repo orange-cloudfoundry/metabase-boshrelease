@@ -5,6 +5,7 @@ set -u # report the usage of uninitialized variables
 
 # Setup env vars and folders for the webapp_ctl script
 source /var/vcap/jobs/metabase/helpers/ctl_setup.sh 'metabase'
+source /var/vcap/jobs/metabase/config/setenv.sh
 
 export PORT=${PORT:-5000}
 export LANG=en_US.UTF-8
@@ -20,7 +21,7 @@ case $1 in
 	exec chpst -u vcap:vcap  $JAVA_HOME/bin/java  \
                -server -XX:+UseG1GC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=25 -Xms128M -Xmx512M  \
                -Djava.security.egd=file:/dev/./urandom \
-               -jar /var/vcap/packages/metabase/metabase.jar  \
+               -jar /var/vcap/packages/metabase/metabase.jar  ${MB_OPTIONS} \
                 >>$LOG_DIR/$JOB_NAME.log 2>&1
 
 
