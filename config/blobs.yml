@@ -1,7 +1,6 @@
-metabase/0.27.0/metabase.jar:
-  size: 111886850
-  object_id: 99c8edb0-9604-4672-4127-67c3efa6f131
-  sha: 7717dd30a125acaee71d33cb3af892af3559ffae
+metabase/0.28.3/metabase.jar:
+  size: 112926387
+  sha: b7fd70918b1bf832ed15b5d13a992663d9318e2a
 openjdk/openjdk.tar.gz:
   size: 126476497
   object_id: 091a3fb1-c09b-474b-4743-4afd65ae360b
