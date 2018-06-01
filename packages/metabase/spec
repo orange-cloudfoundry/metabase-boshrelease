@@ -2,4 +2,4 @@
 name: metabase
 dependencies: []
 files:
-- metabase/0.28.3/metabase.jar
+- metabase/0.29.3/metabase.jar

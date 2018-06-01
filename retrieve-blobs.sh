@@ -1,2 +1,2 @@
 #!/bin/sh
-wget http://downloads.metabase.com/v0.23.0/metabase.jar
+wget http://downloads.metabase.com/v0.29.3/metabase.jar
